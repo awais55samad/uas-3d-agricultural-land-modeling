@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "uas-land"
+version = "0.1.0"
+description = "Three-dimensional agricultural land modeling from unmanned aerial system (UAS) survey points"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+
+[project.scripts]
+uas-land = "uas_land.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
